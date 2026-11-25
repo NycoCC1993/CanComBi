@@ -1,13 +1,13 @@
-// Executor for the physics engine, this is the main entry point for the program.
-// Code should be controlled from here. We also can put an overarching state machine to advance a frame.
+// Executor for the comms system, this is the main entry point for the program.
+// Code should be controlled from here. We also can put an overarching state machine to control timing.
 
 // C++ includes
 #include <iostream>
 
 // Project includes
-#include "Regulators\EntityController.h"
+// none yet
 
 int main() {
-    std::cout << "NYCO Computing Company \"worldEngine\" under the creative commons license, 2026" << std::endl;
+    std::cout << "NYCO Computing Company \"CanComBi\" under the creative commons license, 2026" << std::endl;
     return 0;
 }
