@@ -5,7 +5,7 @@
 #include <iostream>
 
 // Project includes
-// none yet
+#include "CanStream.h"
 
 int main() {
     std::cout << "NYCO Computing Company \"CanComBi\" under the creative commons license, 2026" << std::endl;
