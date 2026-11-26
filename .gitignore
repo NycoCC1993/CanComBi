@@ -3,3 +3,6 @@
 
 # Ignore output folders:
 output/
+
+# Ignore configuration items:
+.vscode/
