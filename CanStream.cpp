@@ -2,9 +2,15 @@
 
 #include "CanStream.h"
 
+// initialize
 CanStream::CanStream()
 {
-    //
+    this->setIsFD(false); // reset FD-CAN status
+    this->isMultiframe = false; // reset multiframe indicator
+
+    // reset frame and data vectors
+    this->myFrames.clear();
+    this->myStream.clear();
 }
 
 // text

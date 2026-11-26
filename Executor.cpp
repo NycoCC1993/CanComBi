@@ -1,9 +1,6 @@
 // Executor for the comms system, this is the main entry point for the program.
 // Code should be controlled from here. We also can put an overarching state machine to control timing.
 
-// C++ includes
-#include <iostream>
-
 // Project includes
 #include "CanStream.h"
 

@@ -1,8 +1,7 @@
 #ifndef CANSTREAM_H
 #define CANSTREAM_H
 
-#include <cstdint>
-#include <vector>
+#include "CanComBiGlobals.h"
 
 class CanStream
 {
@@ -11,9 +10,11 @@ class CanStream
 
         int8_t populate();
 
+        bool getIsFD(); // allow external set FD-CAN or not
+        void setIsFD(bool toSet);
+
     private:
-        std::vector<uint8_t[8]> myFrames; // individual frames of the message. Only has length > 1 if multibyte.
-        std::vector<uint8_t[64]> myFramesFD; // CAN-FD supports 64 bits per frame instead of 8.
+        std::vector<canFrame> myFrames; // individual frames of the message. Only has length > 1 if multibyte. CAN frames only use 8 bytes.
         std::vector<uint8_t> myStream; // the full string of CAN data
 
         bool isFD; // set true if setup for FD-CAN
